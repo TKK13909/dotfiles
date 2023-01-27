@@ -25,7 +25,7 @@ bindsym $mod+l exec --no-startup-id i3lock -i ~/pictures/failure.png
 
 # Blue Light Filter
 
-exec --no-startup-id redshift -l 45.7:-118.3
+exec --no-startup-id redshift #redshift -h to learn how to use
 
 # Compositor
 
