@@ -11,4 +11,5 @@ Unless you somehow have my exact preferences, you will probably want to change t
 ![main-setup](./screens/screen3.png)
 
 # Other configs
-Librewolf Theme(Firefox): https://addons.mozilla.org/en-US/firefox/addon/tokyo_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+Librewolf Theme(Firefox): Tokyo Night https://addons.mozilla.org/en-US/firefox/addon/tokyo_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+VSCode Theme: Neon Dark https://open-vsx.org/vscode/item?itemName=Sudhan.neondark-theme
