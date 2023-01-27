@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+import subprocess
+import time
+import sys
+
+idletime = int(sys.argv[1])
+command = sys.argv[2]
+
+get = lambda cmd: subprocess.check_output(cmd).decode("utf-8").strip()
+
+def get_res():
+    xr = [s for s in get(["xrandr"]).split() \
+          if "+0+0" in s][0].split("x"); xr[1] = xr[1].split("+")[0]
+    return xr
+
+res = get_res()
+
+def check():
+    front = [l for l in get(["xprop", "-root"]).splitlines() \
+             if "_NET_ACTIVE_WINDOW(WINDOW):" in l][0].split("#")[-1].strip()
+    front = front[:2]+(10-len(front))*"0"+front[2:]
+    try:
+        wdata = subprocess.check_output(
+            ["wmctrl", "-lG"]
+            ).decode("utf-8").splitlines()
+        match = [l for l in wdata if front in l][0].split()[4:6]
+        if match == res:
+            return True
+        else:
+            return False
+    except subprocess.CalledProcessError:
+        pass
+
+minus = 0; real_idle = 0; t1 = 0; due_1 = False
+while True:
+    try:
+        time.sleep(1)
+        fscreen = check()
+        t2 = int(int(get(["xprintidle"]))/1000)
+        if t2 < t1:
+            minus = 0; real_idle = 0
+        else:
+            if fscreen == True:
+                minus = t2
+        real_idle = t2 - minus
+        due_2 = [real_idle > idletime][0]
+        if all([real_idle > idletime, due_1 != due_2]):
+            subprocess.Popen(["/bin/bash", "-c", command])
+        due_1 = due_2
+        t1 = t2
+    except:
+        pass
