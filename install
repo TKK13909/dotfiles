@@ -6,13 +6,16 @@ read user
 echo Copying files to /home/$user/
 
 echo Copying rc files
-cp .bashrc .vimrc -v /home/$user/
+cp -v .bashrc .vimrc /home/$user/
 
 echo Copying .config folder
-cp .config -rv /home/$user/ 
+cp -rv .config /home/$user/ 
 
 echo Copying .wallpapers folder
-cp .wallpapers -rv /home/$user/
+cp -rv .wallpapers /home/$user/
 
 echo Copying .welcome folder
-cp .welcome -rv /home/$user/
+cp -rv .welcome /home/$user/
+
+echo Copying binary folder
+cp -rv bin/* /usr/local/bin/
