@@ -1,0 +1,17 @@
+#!/bin/bash
+
+killwait () {
+WINDOWS=$(xdotool search --all --onlyvisible --desktop $(xprop -notype -root _NET_CURRENT_DESKTOP | cut -c 24-) "" 2>/dev/null)
+NUM=$(echo "$WINDOWS" | wc -l)
+if [ $NUM -gt 1 ]; then
+pkill tty-clock
+exit
+fi
+}
+
+i3-msg floating enable
+i3-msg resize set 500 240
+i3-msg move window to position center
+killwait &
+tty-clock -scbBC 5
+

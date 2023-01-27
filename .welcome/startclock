@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while [ true ];
+do
+#sleep 1
+echo doing...
+WINDOWS=$(xdotool search --all --onlyvisible --desktop $(xprop -notype -root _NET_CURRENT_DESKTOP | cut -c 24-) "" 2>/dev/null)
+NUM=$(echo "$WINDOWS" | wc -l)
+echo $NUM
+if [ $NUM -eq 1 ]; then
+alacritty -e /home/tkk/.welcome/clock &
+fi
+done

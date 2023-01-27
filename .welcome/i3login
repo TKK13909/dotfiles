@@ -1,0 +1,9 @@
+#!/bin/bash
+mpv ~/.welcome/reactor_startup.wav > /dev/null &
+i3-msg floating enable
+i3-msg resize set 500 240
+i3-msg move window to position center
+clear
+pfetch | lolcat --seed 17
+~/.welcome/welcome.sh
+sleep 8
