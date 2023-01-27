@@ -1,0 +1,406 @@
+# SET MOD KEY #
+
+set $mod mod4
+
+
+### DISPLAY ###
+
+
+# Cursor
+
+exec "alacritty -e xsetroot -cursor_name left_ptr && sleep 1"
+
+# Second monitor:
+
+set $lm VGA1
+set $mm LVDS1
+exec xrandr --output VGA1 --auto --right-of LVDS1 
+exec xrandr --output LVDS1 --auto
+#exec xrandr --output VGA-1 --auto --left-of LVDS-1 && xrandr --output LVDS-1 --auto
+
+# Screen Lock
+
+exec screensaver 300 "i3lock -i ~/pictures/failure.png" &
+bindsym $mod+l exec --no-startup-id i3lock -i ~/pictures/failure.png
+
+# Blue Light Filter
+
+exec --no-startup-id redshift -l 45.7:-118.3
+
+# Compositor
+
+#exec picom --backend glx &
+exec picom --experimental-backends &
+for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] gaps inner all set 20
+for_window [class="Blueman-manager"] floating enable
+for_window [class="kcalc"] floating enable
+for_window [class="thunderbird" instance="Msgcompose"] floating enable
+for_window [class="unityhub"] floating enable
+for_window [class="zoom"] floating enable
+for_window [window_role=floating_term] floating enable
+
+# Wallpaper:
+
+exec "feh --bg-fill ~/.wallpapers/garuda.jpg"
+#exec alacritty --profile Intro -e ~/.welcome/i3login
+
+# i3 Borders
+
+client.focused #A360CB #A360CB #A360CB #A360CB
+smart_borders on
+
+### KEYBOARD & INPUT ###
+
+
+# Enable tap to click:
+
+exec xinput set-prop "AlpsPS/2 ALPS DualPoint TouchPad" "libinput Tapping Enabled" 1
+
+# Set Mouse Speed
+
+#exec xinput --set-prop 11 'libinput Accel Speed' 1
+
+# Turn On Numlock
+
+exec_always --no-startup-id numlockx on
+
+# Workman Keyboard Layout
+
+exec setxkbmap -v workman
+
+
+### KEYBOARD SHORTCUTS ###
+
+
+# Wallpapers
+
+bindsym $mod+mod2+KP_0 exec --no-startup-id "feh --bg-fill ~/.wallpapers/Act\ 3\ 4K\ \(5\).jpg ~/.wallpapers/Act\ 2\ 4K\ \(14\).jpg"
+bindsym $mod+mod2+KP_1 exec --no-startup-id "feh --bg-fill ~/.wallpapers/garuda.jpg"
+bindsym $mod+mod2+KP_2 exec --no-startup-id "feh --bg-fill ~/.wallpapers/thunder.jpg"
+bindsym $mod+mod2+KP_3 exec --no-startup-id "feh --bg-fill ~/.wallpapers/tree.jpg"
+bindsym $mod+mod2+KP_4 exec --no-startup-id "feh --bg-fill ~/.wallpapers/Act\ 3\ 4K\ \(76\).jpg ~/.wallpapers/Act\ 3\ 4K\ \(74\).jpg"
+bindsym $mod+mod2+KP_5 exec --no-startup-id "feh --bg-fill ~/.wallpapers/lamp.jpg"
+bindsym $mod+mod2+KP_6 exec --no-startup-id "feh --bg-fill ~/.wallpapers/1138740.png"
+bindsym $mod+mod2+KP_7 exec --no-startup-id "feh --bg-fill ~/.wallpapers/arch.png"
+bindsym $mod+mod2+KP_8 exec --no-startup-id "feh --bg-fill ~/.wallpapers/sunset-telephone-poles.png"
+bindsym $mod+mod2+KP_9 exec --no-startup-id "feh --bg-fill ~/.wallpapers/labyrinths.png"
+
+# Toggle Compositor
+
+bindsym $mod+p exec --no-startup-id "picom --experimental-backends; i3-msg [class='^.*'] border pixel 0"
+bindsym $mod+Shift+p exec --no-startup-id "pkill picom & i3-msg [class='^.*'] border pixel 1"
+
+# Toggle Bar
+
+bindsym $mod+b exec --no-startup-id "polybar left & polybar center & polybar right"
+bindsym $mod+Shift+b exec --no-startup-id "pkill polybar"
+
+# Toggle Blue Light Shade
+
+bindsym $mod+r exec --no-startup-id "redshift -l 47.7:-118.3 &"
+bindsym $mod+Shift+r exec --no-startup-id "pkill redshift"
+
+# Reload Monitor Layout
+
+bindsym $mod+s exec --no-startup-id "xrandr --output VGA1 --auto --right-of LVDS1 && xrandr --output LVDS1 --auto && xsetroot -cursor_name left_ptr"
+
+# Gaps
+
+bindsym $mod+z          gaps outer all plus 5
+bindsym $mod+Shift+z    gaps outer all minus 5
+bindsym $mod+x          gaps inner all plus 5
+bindsym $mod+Shift+x    gaps inner all minus 5
+
+bindsym $mod+Ctrl+space gaps inner all set 0 gaps outer all set 0
+
+# Brightness
+
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+   
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# Change Keyboard Layout
+
+bindsym Ctrl+$mod+Prior exec setxkbmap -v workman
+bindsym Ctrl+$mod+Next  exec setxkbmap -v us
+
+# Media Controls
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+bindsym $mod+F11 exec --no-startup-id playerctl play-pause
+bindsym $mod+F12 exec --no-startup-id playerctl next
+bindsym $mod+F10 exec --no-startup-id playerctl previous
+
+# Main Apps
+
+bindsym Ctrl+mod2+KP_0 exec "steam"
+bindsym Ctrl+mod2+KP_1 exec "multimc"
+bindsym Ctrl+mod2+KP_2 exec "alacritty --title ranger -e ranger"
+bindsym Ctrl+mod2+KP_3 exec "alacritty --title btop -e btop"
+bindsym Ctrl+mod2+KP_4 exec "alacritty --title musikcube -e musikcube"
+bindsym Ctrl+mod2+KP_5 exec "code"
+bindsym Ctrl+mod2+KP_6 exec "superproductivity"
+bindsym Ctrl+mod2+KP_7 exec "librewolf"
+bindsym Ctrl+mod2+KP_8 exec "discord"
+bindsym Ctrl+mod2+KP_9 exec "minecraft-launcher"
+
+bindsym $mod+c exec "alacritty --title cava -e cava"
+bindsym $mod+Shift+u exec "alacritty --title unimatrix -e unimatrix.py -s 90 -c black -a"
+
+bindsym XF86Calculator exec kcalc
+bindsym $mod+F9 exec kcalc
+
+
+bindsym Ctrl+Shift+mod2+KP_5 exec "code ~/school/"
+
+bindsym Ctrl+$mod+mod2+KP_0 exec --no-startup-id "dolphin ~/documents/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_1 exec --no-startup-id "dolphin ~/internet/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_2 exec --no-startup-id "dolphin ~/music/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_3 exec --no-startup-id "dolphin ~/pictures/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_4 exec --no-startup-id "dolphin ~/videos/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_5 exec --no-startup-id "dolphin ~ --new-window"
+bindsym Ctrl+$mod+mod2+KP_6 exec --no-startup-id "dolphin ~/apps/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_7 exec --no-startup-id "dolphin ~/git/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_8 exec --no-startup-id "dolphin ~/torrents/ --new-window"
+bindsym Ctrl+$mod+mod2+KP_9 exec --no-startup-id "dolphin ~/school/ --new-window"
+
+bindsym Ctrl+Shift+y exec "librewolf www.youtube.com"
+bindsym Ctrl+Shift+g exec "librewolf https://mail.proton.me/u/0/inbox"
+bindsym Print exec spectacle
+bindsym $mod+Print exec spectacle -u
+
+# Special Character Input:
+
+bindsym --release mod5+c exec --no-startup-id "xdotool type ĉ"
+bindsym --release mod5+Shift+c exec --no-startup-id "xdotool type Ĉ"
+bindsym --release mod5+g exec --no-startup-id "xdotool type ĝ"
+bindsym --release mod5+Shift+g exec --no-startup-id "xdotool type Ĝ"
+bindsym --release mod5+h exec --no-startup-id "xdotool type ĥ"
+bindsym --release mod5+Shift+h exec --no-startup-id "xdotool type Ĥ"
+bindsym --release mod5+j exec --no-startup-id "xdotool type ĵ"
+bindsym --release mod5+Shift+j exec --no-startup-id "xdotool type Ĵ"
+bindsym --release mod5+s exec --no-startup-id "xdotool type ŝ"
+bindsym --release mod5+Shift+s exec --no-startup-id "xdotool type Ŝ"
+bindsym --release mod5+u exec --no-startup-id "xdotool type ŭ"
+bindsym --release mod5+Shift+u exec --no-startup-id "xdotool type Ŭ"
+
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
+
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so
+# they are included here as an example. Modify as you see fit.
+
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+# Use pactl to adjust volume in PulseAudio.
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym $mod+F4 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 100%
+bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+F1 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec cool-retro-term
+
+# kill focused window
+bindsym $mod+q kill
+
+# update system
+bindsym $mod+u exec --no-startup-id alacritty -e yay
+
+# start rofi (a program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show drun 
+bindsym $mod+Shift+d exec --no-startup-id rofi -show run -terminal alacritty
+
+# change focus
+bindsym $mod+n focus left
+bindsym $mod+o focus down
+bindsym $mod+e focus up
+bindsym $mod+i focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+n move left
+bindsym $mod+Shift+o move down
+bindsym $mod+Shift+e move up
+bindsym $mod+Shift+i move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
+
+workspace 1 output $mm
+workspace 2 output $mm
+workspace 3 output $mm
+workspace 4 output $mm
+workspace 5 output $mm
+workspace 6 output $mm
+workspace 7 output $mm
+workspace 8 output $mm
+workspace 9 output $mm
+workspace 10 output $mm
+workspace 11 output $lm
+workspace 12 output $lm
+workspace 13 output $lm
+workspace 14 output $lm
+workspace 15 output $lm
+workspace 16 output $lm
+workspace 17 output $lm
+workspace 18 output $lm
+workspace 19 output $lm
+workspace 20 output $lm
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+bindsym $mod+Ctrl+1 workspace number $ws11
+bindsym $mod+Ctrl+2 workspace number $ws12
+bindsym $mod+Ctrl+3 workspace number $ws13
+bindsym $mod+Ctrl+4 workspace number $ws14
+bindsym $mod+Ctrl+5 workspace number $ws15
+bindsym $mod+Ctrl+6 workspace number $ws16
+bindsym $mod+Ctrl+7 workspace number $ws17
+bindsym $mod+Ctrl+8 workspace number $ws18
+bindsym $mod+Ctrl+9 workspace number $ws19
+bindsym $mod+Ctrl+0 workspace number $ws20
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+Ctrl+Shift+1 move container to workspace number $ws11
+bindsym $mod+Ctrl+Shift+2 move container to workspace number $ws12
+bindsym $mod+Ctrl+Shift+3 move container to workspace number $ws13
+bindsym $mod+Ctrl+Shift+4 move container to workspace number $ws14
+bindsym $mod+Ctrl+Shift+5 move container to workspace number $ws15
+bindsym $mod+Ctrl+Shift+6 move container to workspace number $ws16
+bindsym $mod+Ctrl+Shift+7 move container to workspace number $ws17
+bindsym $mod+Ctrl+Shift+8 move container to workspace number $ws18
+bindsym $mod+Ctrl+Shift+9 move container to workspace number $ws19
+bindsym $mod+Ctrl+Shift+0 move container to workspace number $ws20
+
+
+# reload the configuration file
+bindsym $mod+Shift+m reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+c restart
+# Exit i3
+bindsym $mod+Shift+a exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# Resizing
+
+bindsym Ctrl+$mod+n resize shrink width     5 px or 5 ppt
+bindsym Ctrl+$mod+e resize grow height      5 px or 5 ppt
+bindsym Ctrl+$mod+o resize shrink height    5 px or 5 ppt
+bindsym Ctrl+$mod+i resize grow width       5 px or 5 ppt
+bindsym Ctrl+$mod+Left resize shrink width  1 px or 1 ppt
+bindsym Ctrl+$mod+Up resize grow height   1 px or 1 ppt
+bindsym Ctrl+$mod+Down resize shrink height   1 px or 1 ppt
+bindsym Ctrl+$mod+Right resize grow width   1 px or 1 ppt
+
+
+# Bar
+
+exec --no-startup-id "polybar left & polybar center & polybar right"
+exec --no-startup-id "dunst &"
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+#bar {
+#        #status_command i3status
+#        #output LVDS1
+#        status_command exec /home/tkk/.config/i3status/mybar.sh
+#    colors {
+#        background #00000000
+#        statusline #ffffff
+#
+#        focused_workspace  #D4B7E6 #7A33A4
+#        active_workspace   #D4B7E6 #3A194C
+#        inactive_workspace #000000 #3A194C
+#        urgent_workspace   #ffffff #900000
+#    }    
+#}
+
+### STARTUPS ###
+
+# KDE Connect
+exec --no-startup-id kdeconnect-app & sleep 1 && pkill kdeconnect-app
