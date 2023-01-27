@@ -7,3 +7,5 @@ Unless you somehow have my exact preferences, you will probably want to change t
 
 # Screenshots
 ![main-setup](./screens/screen1.png)
+![neofetch](./screens/screen2.png)
+![main-setup](./screens/screen3.png)
