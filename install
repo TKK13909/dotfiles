@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo Which user would you like to install this to? 
 read user
 
