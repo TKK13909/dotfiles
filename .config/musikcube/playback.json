@@ -1,0 +1,9 @@
+{
+  "OutputPlugin": "PulseAudio",
+  "PreampDecibels": 0.0,
+  "RepeatMode": 2,
+  "ReplayGainMode": 0,
+  "TimeChangeMode": 1,
+  "Transport": 1,
+  "Volume": 1.0
+}

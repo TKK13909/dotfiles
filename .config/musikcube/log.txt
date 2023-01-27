@@ -1,0 +1,219 @@
+09:03:45 [info] [LOG SESSION] ---------- START ----------
+09:03:45 [info] [PluginFactory] loading plugins
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
+09:03:45 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
+09:03:45 [info] [Indexer] indexer source -1303229654 running...
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [Indexer] indexer source -1303229654 finished
+09:03:45 [info] [Indexer] indexer source 155697690 running...
+09:03:45 [info] [Indexer] indexer source 155697690 finished
+09:03:45 [info] [Indexer] scanning /home/tkk/music/
+09:03:45 [info] [Indexer] scan completed successfully
+09:03:45 [info] [Indexer] cleanup 1/2
+09:03:45 [info] [Indexer] cleanup 2/2
+09:03:45 [info] [Indexer] optimizing
+09:03:45 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+09:03:45 [info] [Indexer] done!
+09:03:45 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+09:03:45 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+09:03:45 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:03:45 [info] [CrossfadeTransport] trying to play /home/tkk/music/Soundtracks/Games/Minecraft/Beta/43 The End.mp3
+09:03:45 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:03:45 [info] [PipeWireOut] shutdown started
+09:03:45 [info] [PipeWireOut] shutdown complete
+09:03:45 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:03:45 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:03:45 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:03:45 [info] [Player] new instance created
+09:03:45 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/43 The End.mp3
+09:03:45 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/43 The End.mp3
+09:03:45 [info] [ffmpegdecoder] parsing data stream...
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+09:03:45 [info] [ffmpegdecoder] found audio stream!
+09:03:45 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:03:45 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/43 The End.mp3
+09:03:45 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+09:03:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+09:03:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+09:03:46 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:03:46 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:03:46 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:03:46 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:03:46 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:03:46 [info] [PipeWireOut] shutdown started
+09:03:46 [info] [PipeWireOut] shutdown complete
+09:03:46 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:03:46 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:03:46 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:03:46 [info] [Player] new instance created
+09:03:46 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/44 Chirp.mp3
+09:03:46 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/44 Chirp.mp3
+09:03:46 [info] [ffmpegdecoder] parsing data stream...
+09:03:46 [info] [ffmpegdecoder] found audio stream!
+09:03:46 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:03:46 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/44 Chirp.mp3
+09:03:46 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:07:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:07:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:07:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:13:17 [info] [ffmpegdecoder] finished decoding.
+09:13:19 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:13:19 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:13:19 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:13:19 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:13:19 [info] [PipeWireOut] shutdown started
+09:13:19 [info] [PipeWireOut] shutdown complete
+09:13:19 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:13:19 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:13:19 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:13:19 [info] [Player] new instance created
+09:13:19 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/45 Wait.mp3
+09:13:19 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/45 Wait.mp3
+09:13:19 [info] [ffmpegdecoder] parsing data stream...
+09:13:19 [info] [ffmpegdecoder] found audio stream!
+09:13:19 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:13:19 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/45 Wait.mp3
+09:13:19 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:14:05 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:14:05 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:14:05 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:16:24 [info] [ffmpegdecoder] finished decoding.
+09:16:26 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:16:26 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:16:26 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:16:26 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:16:26 [info] [PipeWireOut] shutdown started
+09:16:26 [info] [PipeWireOut] shutdown complete
+09:16:26 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:16:26 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:16:26 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:16:26 [info] [Player] new instance created
+09:16:26 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/46 Melohi.mp3
+09:16:26 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/46 Melohi.mp3
+09:16:26 [info] [ffmpegdecoder] parsing data stream...
+09:16:26 [info] [ffmpegdecoder] found audio stream!
+09:16:26 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:16:26 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/46 Melohi.mp3
+09:16:26 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:17:24 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:17:24 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:17:24 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:20:17 [info] [ffmpegdecoder] finished decoding.
+09:20:18 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:20:18 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:20:18 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:20:19 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:20:19 [info] [PipeWireOut] shutdown started
+09:20:19 [info] [PipeWireOut] shutdown complete
+09:20:19 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:20:19 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:20:19 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:20:19 [info] [Player] new instance created
+09:20:19 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/47 Stal.mp3
+09:20:19 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/47 Stal.mp3
+09:20:19 [info] [ffmpegdecoder] parsing data stream...
+09:20:19 [info] [ffmpegdecoder] found audio stream!
+09:20:19 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:20:19 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/47 Stal.mp3
+09:20:19 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:20:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:20:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:20:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:21:53 [info] [ffmpegdecoder] finished decoding.
+09:21:54 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:21:54 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:21:54 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:21:54 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:21:54 [info] [PipeWireOut] shutdown started
+09:21:54 [info] [PipeWireOut] shutdown complete
+09:21:54 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:21:54 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:21:54 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:21:54 [info] [Player] new instance created
+09:21:54 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/48 Strad.mp3
+09:21:54 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/48 Strad.mp3
+09:21:54 [info] [ffmpegdecoder] parsing data stream...
+09:21:54 [info] [ffmpegdecoder] found audio stream!
+09:21:54 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:21:54 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/48 Strad.mp3
+09:21:54 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:22:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:22:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:22:31 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:24:23 [info] [ffmpegdecoder] finished decoding.
+09:24:24 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+09:24:24 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+09:24:24 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+09:24:24 [info] [PortAudioOut] Pa_Initialize() return code: 0
+09:24:24 [info] [PipeWireOut] shutdown started
+09:24:24 [info] [PipeWireOut] shutdown complete
+09:24:24 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+09:24:24 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+09:24:24 [info] [PortAudioOut] Pa_Terminate() return code: 0
+09:24:24 [info] [Player] new instance created
+09:24:24 [info] [Stream] opening /home/tkk/music/Soundtracks/Games/Minecraft/Beta/49 Eleven.mp3
+09:24:24 [info] [LocalFileStream] opening file: /home/tkk/music/Soundtracks/Games/Minecraft/Beta/49 Eleven.mp3
+09:24:24 [info] [ffmpegdecoder] parsing data stream...
+09:24:24 [info] [ffmpegdecoder] found audio stream!
+09:24:24 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+09:24:24 [info] [Streams] found a decoder for /home/tkk/music/Soundtracks/Games/Minecraft/Beta/49 Eleven.mp3
+09:24:24 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+09:25:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+09:25:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+09:25:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+09:27:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+09:27:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+09:27:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
