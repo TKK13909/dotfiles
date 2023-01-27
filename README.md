@@ -6,4 +6,4 @@ Read through the install script and run it with `sudo ./install`. (If you don't 
 Unless you somehow have my exact preferences, you will probably want to change the keybindings for i3 and vim (~/.config/i3/config and .vimrc).
 
 # Screenshots
-[[./screens/screen1.png](screens/screen1.png)]
+[[./screens/screen1.png](https://raw.githubusercontent.com/TKK13909/dotfiles/main/screens/screen1.png)]
