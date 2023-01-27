@@ -1,0 +1,22 @@
+{
+    "currentVersionInfo": {
+        "version": "1.1.2",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "notiTime": 2,
+        "position": 0,
+        "keywords": "",
+        "case": false,
+        "markAsRead": true,
+        "roleColor": false,
+        "disableIfNoFocus": false,
+        "disableOnDnd": false,
+        "ignoreDMs": false,
+        "relationshipsNotis": true,
+        "ignoreDMGroups": false,
+        "ignoredUsers": "",
+        "ignoredServers": "",
+        "ignoredChannels": ""
+    }
+}

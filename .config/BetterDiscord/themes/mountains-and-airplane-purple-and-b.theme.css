@@ -1,0 +1,19 @@
+//META{"name":"Mountains and airplane (purple and blue)","description":"Theme generated using https://vsthemes.org/generator","author":"VSThemes.org","version":"1.0"}*//
+@import url(https://vsthemes.org/uploads/generator/client/BasicBackground.css);
+:root {
+    --transparencycolor: 0,0,0;
+    --transparencyalpha: 0.05;
+    --messagetransparency: 0.2;
+    --guildchanneltransparency: 0.3;
+    --memberlistransparency: 0.15;
+    --accentcolor: 91,99,238;
+    --background: url("https://vsthemes.org/uploads/posts/2021-07/1627371264_minimalizm_3840x2160.jpg");
+    --backdrop: rgba(0,0,0,0.2);
+    --backgroundblur: 0px;
+    --popoutblur: 0px;
+    --backdropblur: 0px;
+    --version1_0_5:none;
+    --backgroundsize: cover;
+    --popoutsize: cover;
+    --backdropsize: cover;
+}

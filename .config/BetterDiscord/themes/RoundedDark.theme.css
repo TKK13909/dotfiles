@@ -1,0 +1,55 @@
+/**
+ * @name Rounded Dark
+ * @author Adaelyn
+ * @version 1.2.1
+ * @description Yet another (rounded) Dark Discord Theme.
+ * @source https://github.com/AdaelynXIV/RoundedDark
+*/
+
+@import url('https://adaelynxiv.github.io/RoundedDark/src/roundeddark.css');
+
+/* #  Plugin Fixes/Edits  # */
+/* Uncomment a plugin Import URL if you use a plugin that's listed here */
+
+/* Channel Tabs: */
+/*@import url('https://adaelynxiv.github.io/RoundedDark/src/plugins/channeltabs.css');*/
+
+/* Customizable Variables */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+:root {
+    --font-primary: 'Karla', sans-serif;
+    --custom-background: #576aed;
+
+    --blurple: #576aed;
+    --grey:#252629;
+    --lightgrey:#323438;
+    --darkgrey:#17181a;
+    --red:#eb4148;
+    --blurple-gradient: linear-gradient(0deg, rgba(37,38,41,1) 0%, rgba(87,106,237,1) 70%);
+    --darkgrey-gradient: linear-gradient(0deg, rgba(37,38,41,1) 0%, rgba(23,24,26,1) 100%);
+
+    --radius: 16px;
+    --spacing: 11px;
+}
+
+/* Coloured Folder Icons by CapnKitten (Gibbu#1211 edit)*/
+/* If you wish to remove the Folder Icons; or if it breaks one of your plug-ins, remove everything under here: */
+.closedFolderIconWrapper-3tRb2d {
+    display: none;
+}
+.folderIconWrapper-1oRIZr:not([style=""])::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: inherit;
+    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    transform: scale(1.3335);
+    filter: brightness(1.5) saturate(1.5);
+}

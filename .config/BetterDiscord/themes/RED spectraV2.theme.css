@@ -1,0 +1,158 @@
+/**
+ * @name         Spectra RED v2.2
+ * @description  Red Color.
+ * @author       (Edited by Toppaz)
+ * @version      2.2
+ * @website      
+ * @source       
+ * @invite       2MucdZyQsb
+ * @authorId     583750578094735360
+ */
+@import url("https://pixelmelt.github.io/Spectra/spectrafullV2.css");
+@import url('https://pixelmelt.github.io/Spectra/src/oldpop.css'); /* old user popouts */
+@import url('https://pixelmelt.github.io/Spectra/src/roundite.css'); /* rounded gui */
+@import url("https://pixelmelt.github.io/Spectra/src/cosmetics.css"); /* user cosmetics */
+@import url("https://raw.githack.com/NYRI4/Discolored/master/main.css"); /* colored discord SVGs */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/base.css'); /* Speaking rings base*/
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/voiceconnectedpanel.css'); /* Speaking rings voice connected panel */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/bigusers.css'); /* Speaking rings fullscreen user panels */
+
+/*13181d-171d23-1b2229-1f2933-353f4a-37414D-efbe1c-ffd500-fdd651-ffe89b*/
+
+ .theme-dark {
+  /* Theme Colors */
+
+  /* Background */
+  --color-1: #13151d;
+  --color-2: rgb(35, 23, 23);
+  --color-3: rgb(41, 27, 27);
+  --color-4: rgb(51, 31, 31);
+  --color-5: rgb(102, 78, 78);
+  /* text */
+  --color-6: rgb(225, 90, 90);
+  --color-7: rgb(225, 90, 90);
+  --color-8: rgb(225, 90, 90);
+  --color-9: rgb(225, 90, 90);
+  --color-10: rgb(225, 90, 90);
+  /*Speaking Rings*/
+  --gradient1:  var(--color-10);
+  --gradient2:  var(--color-6);
+  --gradientangle: 45deg;
+  --dmvoicebgcolor: var(--color-6);
+  /* blurple color */
+  --accentcolor: 235, 155, 90;
+   /*Roundite*/
+  --roundness: 15px;
+ }
+
+
+/* advanced variables */
+.theme-dark {
+    --header-primary: var(--color-10);
+    --background-primary: var(--color-3);
+    --background-secondary: var(--color-2);
+    --background-tertiary: var(--color-1);
+    --background-accent: var(--color-2);
+    --interactive-hover: var(--color-5);
+    --channels-default: var(--color-10);
+    --channeltextarea-background: var(--color-4);
+    --background-secondary-alt: var(--color-4);
+    --interactive-normal: var(--color-10);
+    --scrollbar-auto-track: var(--color-4);
+    --scrollbar-auto-thumb: var(--color-5);
+    --background-floating: var(--color-4);
+    --background-modifier-selected: var(--color-4);
+    --background-modifier-hover: var(--color-4);
+    --background-modifier-active: var(--color-4);
+    --interactive-selected: var(--color-10);
+    --interactive-active: var(--color-10);
+    --brand-experiment: var(--color-9);
+    --highlighted: var(--color-5);
+
+    --text-normal: var(--color-7);
+    --text-positive: var(--accent-color);
+    --text-muted: var(--color-6);
+    --text-link: var(--color-10);
+    --interactive-selected: var(--background-primary);
+    --interactive-normal: var(--color-10);
+    --channels-default: var(--text-muted);
+    --header-primary: var(--color-10);
+    --header-secondary: var(--color-10);
+/* more colors */
+  --settings-icon-color: #000;
+  --radio-bar-accent-color: transparent;
+  --control-brand-foreground: var(--accent-color);
+  --info-warning-foreground: var(--accent-color);
+  --tab-selected: #000;
+  --channeltextarea-background: var(--color-4);
+  --switch: #000;
+  --activity-card-background: var(--background-1);
+/* buttons */
+  --button-background: var(--color-4);
+  --button-background-hover: var(--color-10);
+  --button-background-active: var(--color-10);
+  --button-accent: var(--color-10);
+  --button-accent-hover: #d6fde0;
+  --button-accent-active: #95f09d;
+  --button-destructive: #fb7c7c;
+  --button-destructive-hover: #ff929b;
+  --button-destructive-active: #fa4a4a;
+}
+
+/* blurple */
+
+.theme-dark, .theme-light {
+    --control-brand-foreground: rgb(var(--accentcolor)) !important;
+    --control-brand-foreground-new: rgb(var(--accentcolor)) !important;
+    --brand-experiment-100: #fdfdfd !important;
+    --brand-experiment-130: #f2f2f2 !important;
+    --brand-experiment-160: #ebebeb !important;
+    --brand-experiment-200: #e3e3e3 !important;
+    --brand-experiment-230: #dadada !important;
+    --brand-experiment-260: #d1d1d1 !important;
+    --brand-experiment-300: rgb(var(--accentcolor)) !important;
+    --brand-experiment-330: rgb(var(--accentcolor)) !important;
+    --brand-experiment-360: rgb(var(--accentcolor)) !important;
+    --brand-experiment-400: rgb(var(--accentcolor)) !important;
+    --brand-experiment-430: rgb(var(--accentcolor)) !important;
+    --brand-experiment-460: rgb(var(--accentcolor)) !important;
+    --brand-experiment: rgb(var(--accentcolor)) !important;
+    --brand-experiment-500: rgb(var(--accentcolor)) !important;
+    --brand-experiment-530: rgb(var(--accentcolor)) !important;
+    --brand-experiment-560: rgb(var(--accentcolor)) !important;
+    --brand-experiment-600: rgb(var(--accentcolor)) !important;
+    --brand-experiment-630: rgb(var(--accentcolor)) !important;
+    --brand-experiment-660: rgb(var(--accentcolor)) !important;
+    --brand-experiment-700: #323232 !important;
+    --brand-experiment-730: #2b2b2b !important;
+    --brand-experiment-760: #272727 !important;
+    --brand-experiment-800: #222222 !important;
+    --brand-experiment-830: #1a1a1a !important;
+    --brand-experiment-860: #111111 !important;
+    --brand-experiment-900: #0b0b0b !important;
+    --brand-experiment-05a: rgba(var(--accentcolor),.05) !important;
+    --brand-experiment-10a: rgba(var(--accentcolor),.1) !important;
+    --brand-experiment-15a: rgba(var(--accentcolor),.15) !important;
+    --brand-experiment-20a: rgba(var(--accentcolor),.2) !important;
+    --brand-experiment-25a: rgba(var(--accentcolor),.25) !important;
+    --brand-experiment-30a: rgba(var(--accentcolor),.3) !important;
+    --brand-experiment-35a: rgba(var(--accentcolor),.35) !important;
+    --brand-experiment-40a: rgba(var(--accentcolor),.4) !important;
+    --brand-experiment-45a: rgba(var(--accentcolor),.45) !important;
+    --brand-experiment-50a: rgba(var(--accentcolor),.5) !important;
+    --brand-experiment-55a: rgba(var(--accentcolor),.55) !important;
+    --brand-experiment-60a: rgba(var(--accentcolor),.6) !important;
+    --brand-experiment-65a: rgba(var(--accentcolor),.65) !important;
+    --brand-experiment-70a: rgba(var(--accentcolor),.7) !important;
+    --brand-experiment-75a: rgba(var(--accentcolor),.75) !important;
+    --brand-experiment-80a: rgba(var(--accentcolor),.8) !important;
+    --brand-experiment-85a: rgba(var(--accentcolor),.85) !important;
+    --brand-experiment-90a: rgba(var(--accentcolor),.9) !important;
+    --brand-experiment-95a: rgba(var(--accentcolor),.95) !important;
+}
+
+/* Hello Friends! Enjoy my theme! */
+/* Feel free to message me if you have any issues */
+/* Pix#7008 */
+/* toppxz#1808 */
+/* p0rtL#6592 was here :) */

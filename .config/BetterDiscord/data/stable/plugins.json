@@ -1,0 +1,21 @@
+{
+    "ThemeRepo": true,
+    "TypingUsersAvatars": true,
+    "TypingIndicator": true,
+    "CustomStatusPresets": true,
+    "FileViewer": false,
+    "HideChannels": false,
+    "ZeresPluginLibrary": true,
+    "BugReportHelper": true,
+    "BDFDB": true,
+    "CollapsibleUI": true,
+    "DoubleClickToEdit": true,
+    "AppNotifications": true,
+    "Animations": false,
+    "ThemeSettings": false,
+    "CopyRawMessage": true,
+    "PersonalPins": true,
+    "RemoveChatButtons": true,
+    "Hide Channels": false,
+    "Double Click To Edit": true
+}
