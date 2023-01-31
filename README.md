@@ -3,9 +3,13 @@ Read through the install script and run it with `sudo ./install`. (If you don't 
 
 # Keybindings:
 Unless you somehow have my exact preferences, you will probably want to change the keybindings for certain programs: 
+
 ~/.config/i3/config
+
 ~/.config/ranger/rc.conf
+
 ~/.config/musikcube/hotkeys.json
+
 ~/.vimrc
 
 # Screenshots:
