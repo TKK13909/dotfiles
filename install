@@ -19,3 +19,6 @@ cp -rv .welcome /home/$user/
 
 echo Copying /usr/ folder
 cp -rv ./usr/* /usr/
+
+echo Copying /etc/ folder
+cp -rv ./etc/* /etc/
