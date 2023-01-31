@@ -9,7 +9,11 @@ Unless you somehow have my exact preferences, you will probably want to change t
 ~/.vimrc
 
 # Screenshots:
-![main-setup](./screens/*.png)
+![screenshot](./screens/screen1.png)
+![screenshot](./screens/screen2.png)
+![screenshot](./screens/screen3.png)
+![screenshot](./screens/screen4.png)
+![screenshot](./screens/screen5.png)
 
 # Other configs:
 Librewolf Theme(Firefox): Tokyo Night https://addons.mozilla.org/en-US/firefox/addon/tokyo_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
