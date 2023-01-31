@@ -17,5 +17,5 @@ cp -rv .wallpapers /home/$user/
 echo Copying .welcome folder
 cp -rv .welcome /home/$user/
 
-echo Copying binary folder
-cp -rv bin/* /usr/local/bin/
+echo Copying /usr/ folder
+cp -rv ./usr/* /usr/
