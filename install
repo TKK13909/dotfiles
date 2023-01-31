@@ -24,4 +24,4 @@ echo Copying /etc/ folder
 cp -rv ./etc/* /etc/
 
 echo Copying dots!
-cp -rv ./.Xauthority /home/$user/
+cp -rv ./.Xauthority ./.i3/ /home/$user/
