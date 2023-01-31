@@ -6,7 +6,7 @@ read user
 echo Copying files to /home/$user/
 
 echo Copying rc files
-cp -v .bashrc .vimrc /home/$user/
+cp -v .bashrc .vimrc .xinitrc /home/$user/
 
 echo Copying .config folder
 cp -rv .config /home/$user/ 
